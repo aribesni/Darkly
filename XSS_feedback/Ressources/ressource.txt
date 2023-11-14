@@ -1,0 +1,1 @@
+type “a”, “c”, “script”, or “<svg/onload=alert('XSS')>a” in the message input

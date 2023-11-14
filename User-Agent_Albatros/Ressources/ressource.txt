@@ -1,0 +1,3 @@
+In Burp
+Change User-Agent to ft_bornToSec
+Change Referer to https://www.nsa.gov/

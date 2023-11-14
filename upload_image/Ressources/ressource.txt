@@ -1,0 +1,1 @@
+With Burp Suite, upload an image.jpg, send to Repeater, change image extension to image.php, send HTTP Request.

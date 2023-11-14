@@ -1,0 +1,3 @@
+Cookie “I_am_admin” hashed with MD5
+Value when de hashed is “false”
+If we hash “true” with MD5 and replace the cookie with it we get the flag.

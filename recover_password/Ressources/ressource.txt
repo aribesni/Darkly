@@ -1,0 +1,3 @@
+Recover password page :
+mail : webmaster@borntosec.com
+Intercept request, change mail to recover

