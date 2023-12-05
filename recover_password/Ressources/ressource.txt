@@ -1,3 +1,4 @@
-Recover password page :
-mail : webmaster@borntosec.com
-Intercept request, change mail to recover
+Quand on clique sur "I forgot my password" on arrive sur une page où il y a uniquement un bouton "Submit"
+En regardant le code source de cette page, on se rend compte qu'il y a un champs caché qui fait partie du formulaire lié au "Submit" et qui contient l'addresse e-mail "webmaster@borntosec.com"
+
+Il suffit de changer la valeur de ce champs (par sa propre addresse email par exemple), puis de "Submit" et le site nous affiche le flag

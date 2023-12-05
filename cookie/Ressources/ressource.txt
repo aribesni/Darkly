@@ -1,3 +1,5 @@
-Cookie “I_am_admin” hashed with MD5
-Value when de hashed is “false”
-If we hash “true” with MD5 and replace the cookie with it we get the flag.
+Il y a un cookie: I_am_admin avec la valeur 68934a3e9455fa72420237eb05902327
+
+Ca correspond à un chiffrage MD5, une fois déchiffré on obtient: false
+
+On a plus qu'à remplacer la valeur du cookie I_am_admin par "true" chiffré en MD5 pour avoir le flag

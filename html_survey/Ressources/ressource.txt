@@ -1,1 +1,5 @@
-With Burp, change first grade to 5000 in HTTP header
+Dans la page Survey on peut donner des notes de 1 à 10 à wil, alex etc...
+On peut voir que la moyenne des notes données à wil est de plus de 4000, ce qui devrait etre impossible si les notes vont de 1 à 10.
+Quand on regarde le code source on peut voir que la valeur des select correspond bien au chiffre indiqué (valeur de "10" pour le 10 du select etc...).
+Toujours dans le code source, si on change la valeur du select 10 pour wil par exemple, et qu'on le met à 5000 disons,
+alors quand on sélectionne la note 10 pour wil on peut voir que c'est bien la note de 5000 qui s'est rajouté à sa moyenne, et le flag apparait.

@@ -1,1 +1,7 @@
-type “a”, “c”, “script”, or “<svg/onload=alert('XSS')>a” in the message input
+Dans la page des feedback les commentaires sont vulnérable à une injection XSS permanente.
+Si dans le champs Message on met:
+<svg/onload=alert('XSS')>a
+OU
+script
+
+On obtient le flag

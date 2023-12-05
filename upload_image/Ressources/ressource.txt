@@ -1,1 +1,10 @@
-With Burp Suite, upload an image.jpg, send to Repeater, change image extension to image.php, send HTTP Request.
+La page où on peut upload une image a une faille, on peut modifier l'extension (et potentiellement le contenu) d'une image normalement valide qu'on uploaderait.
+Si on rajoute ".php" à la fin du filename dans la ligne Content-Disposition dans le corps de la requete:
+Content-Disposition: form-data; name="uploaded"; filename="JPEG_example.jpg.php"
+
+Sans modifier la ligne:
+Content-Type: image/jpeg
+
+Faisable avec Burp Suite
+
+On obtient le flag

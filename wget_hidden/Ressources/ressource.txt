@@ -1,3 +1,19 @@
-using wget and in look in robots.txt file
-wget -e robots=off -r -np -R "index.html*" 192.168.1.16/.hidden/ (takes some time)
-then grep “flag” -R
+wget -R "index.html*" --recursive --level=inf  http://192.168.1.16/
+
+On obtient ainsi les pages, images etc.. du site, dont robots.txt
+Un fichier robots.txt indique aux robots d'exploration d'un moteur de recherche les URL auxquelles il peut accéder sur votre site
+
+Il contient:
+
+User-agent: *
+Disallow: /whatever
+Disallow: /.hidden
+
+
+Donc on peut faire un wget pour recuperer ce qu'il y a dans .hidden:
+wget -R "index.html*" -e robots=off --recursive --level=inf  http://192.168.1.16/.hidden/
+
+On y trouve une énorme arborescence de dossiers et de fichiers README, on fait un grep sur "flag" et on obtient:
+
+192.168.1.16/.hidden/whtccjokayshttvxycsvykxcfm/igeemtxnvexvxezqwntmzjltkt/lmpanswobhwcozdqixbowvbrhw/README:
+Hey, here is your flag

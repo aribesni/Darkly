@@ -1,1 +1,7 @@
-In the HTML code change link of social media to any domain
+Les adresses de redirections (facebook, twitter ...) sont vulnérables et permettent de mettre n'importe quel site.
+Dans le code source si on change le href de:
+<a href="index.php?page=redirect&site=facebook" class="icon fa-facebook">
+par:
+index.php?page=redirect&site=http://evil.com
+
+La redirection nous donne le flag

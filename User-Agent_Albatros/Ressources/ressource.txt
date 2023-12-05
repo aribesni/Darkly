@@ -1,3 +1,8 @@
-In Burp
-Change User-Agent to ft_bornToSec
-Change Referer to https://www.nsa.gov/
+Quand on clique sur ©BornToSec tout en bas du site on arrive sur l'url: http://192.168.1.16/index.php?page=b7e44c7a40c5f80139f0a50f3650fb2bd8d00b0d24667c4c2ca32c88e13b758f
+Dans le code source de cette page on trouve les commentaires:
+You must come from : "https://www.nsa.gov/".
+Let's use this browser : "ft_bornToSec". It will help you a lot.
+
+Donc on envoie une requete HTTP à l'url de la page, avec dans l'entete User-Agent à "ft_bornToSec" et Referer à "https://www.nsa.gov/".
+
+On obtient le flag
