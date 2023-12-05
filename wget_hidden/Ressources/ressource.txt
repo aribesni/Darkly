@@ -1,4 +1,4 @@
-wget -R "index.html*" --recursive --level=inf  http://192.168.1.16/
+wget -R "index.html*" --recursive --level=inf http://192.168.1.16/
 
 On obtient ainsi les pages, images etc.. du site, dont robots.txt
 Un fichier robots.txt indique aux robots d'exploration d'un moteur de recherche les URL auxquelles il peut accéder sur votre site
